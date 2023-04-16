@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "12290e90-a1f8-4edf-b432-779abdaad036",
+		"name": "Microservice Bibliothèque",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23821460"
+	},
+	"item": [
+		{
+			"name": "Acceuil bibliothèqe - lecteur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/livres/ajout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"livres",
+						"ajout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accéder à un livre - lecteur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/livres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"livres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emprunter un livre - lecteur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/emprunts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"emprunts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retour de livre - lecteur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/emprunts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"emprunts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ajouter un lecteur - lecteur",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/lecteur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"lecteur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recherche lecteur par nom - lecteur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/lecteur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"lecteur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supprimer lecteur - lecteu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/lecteur/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"lecteur",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "liste des livres - livre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/livres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"livres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "récupérer un livre - livres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/livres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"livres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifier un livre - livre",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/livres/modifie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"livres",
+						"modifie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "surprime un livre - livres",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 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",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"id\": 4,\r\n\"nom\": \"Poney en bois\",\r\n\"prix\": 145,\r\n\"prixAchat\":50\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/livres/suprime/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"livres",
+						"suprime",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ensemble des emprunts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nom\":\"jkkdfs\",\r\n    \"prix\":0,\r\n    \"prixAchat\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9002/emprunt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"emprunt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aller sur son emprunt - emprunt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/emprunt/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"emprunt",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prolonger la date d'emprunt - emprunt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/emprunt/renouvellement/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"emprunt",
+						"renouvellement",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retour livre - emprunt",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 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",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"id\": 4,\r\n\"nom\": \"Poney en bois\",\r\n\"prix\": 145,\r\n\"prixAchat\":50\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9002/emprunt/retour",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"emprunt",
+						"retour"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supression emprunt - emprunt",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/emprunt/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"emprunt",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
