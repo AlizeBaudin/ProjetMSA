@@ -8,12 +8,12 @@ EXECUTION DU CODE :
 - clique droit sur ce dernier dossier, puis cliquez sur "Exécuter"
 
 
-RESULTAT OU ATTENDU :
+RESULTATS ET ATTENDUS :
 - les deux microservice "Emprunt" et "Livre" vont fonctionner, sans pour autant afficher quelque chose sur leur adress http respectives 
 (http://localhost:9001 pour le microservice "livre" et http://localhost:9002 pour le microservice 'emprunt')
 - Le microservice 'Lecteur' (alias 'client[MSA]') ne s'exécutera pas conveblament compte tenu qu'il manque certainement des modules ou des conflits 
 dans les dépendances du pom.xml. 
-- L'application associé au lecteur ne fonctionne pas non plus en la déployant sur Azure ou autre possibilité de déployment
+- L'application associée au lecteur ne fonctionne pas non plus en la déployant sur Azure ou autre possibilité de la déployer.
 
 
 MANQUE :
