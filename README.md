@@ -9,10 +9,10 @@ EXECUTION DU CODE :
 
 
 RESULTATS ET ATTENDUS :
-- les deux microservices "Emprunt" et "Livre" vont fonctionner, sans pour autant afficher quelque chose sur leur adress http respectives 
+- les deux microservices "Emprunt" et "Livre" vont fonctionner, sans pour autant afficher quelque chose sur leur adresse http respective 
 (http://localhost:9001 pour le microservice "livre" et http://localhost:9002 pour le microservice 'emprunt')
 - Le microservice 'Lecteur' (alias 'client[MSA]') ne s'exécutera pas conveblament compte tenu qu'il manque certainement des modules ou des conflits 
-dans les dépendances du pom.xml. 
+dans les dépendances du pom.xml de 'Lecteur' (alias 'client[MSA]'). 
 - L'application associée au lecteur ne fonctionne pas non plus en la déployant sur Azure ou autre possibilité de la déployer.
 
 
