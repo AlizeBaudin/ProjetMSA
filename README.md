@@ -4,12 +4,12 @@
 - avant d'exécuter sur un même environnement de travail, séparer le fichier JSon du reste des documents
 
 EXECUTION DU CODE :
-- une fois le projet ouvert dans IntelliJ, un dossier apparaît en bas à gauche pour faire exécuter en même temps les microservice
+- une fois le projet ouvert dans IntelliJ, un dossier apparaît en bas à gauche pour faire exécuter en même temps les microservices
 - clique droit sur ce dernier dossier, puis cliquez sur "Exécuter"
 
 
 RESULTATS ET ATTENDUS :
-- les deux microservice "Emprunt" et "Livre" vont fonctionner, sans pour autant afficher quelque chose sur leur adress http respectives 
+- les deux microservices "Emprunt" et "Livre" vont fonctionner, sans pour autant afficher quelque chose sur leur adress http respectives 
 (http://localhost:9001 pour le microservice "livre" et http://localhost:9002 pour le microservice 'emprunt')
 - Le microservice 'Lecteur' (alias 'client[MSA]') ne s'exécutera pas conveblament compte tenu qu'il manque certainement des modules ou des conflits 
 dans les dépendances du pom.xml. 
